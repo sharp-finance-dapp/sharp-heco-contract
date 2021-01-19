@@ -1,0 +1,38 @@
+{
+    "lp_contract": "CurveTokenV2",
+    "swap_address": "0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7",
+    "lp_token_address": "0x6c3F90f043a72FA612cbac8115EE7e52BDe6E490",
+    "gauge_addresses": ["0xbFcF63294aD7105dEa65aA58F8AE5BE2D9d0952A"],
+    "lp_constructor": {
+        "symbol": "3SRP",
+        "name": "Sharp.fi DAI/USDC/USDT",
+        "decimals": 18,
+        "init_supply": 50000000
+    },
+    "swap_constructor": {
+        "_A": 200,
+        "_fee": 4000000,
+        "_admin_fee": 5000000000,
+        "_offpeg_fee_multiplier": 20000000000
+    },
+    "coins": [
+        {
+            "name": "DAI",
+            "decimals": 18,
+            "tethered": false,
+            "underlying_address": "0x60d64ef311a4f0e288120543a14e7f90e76304c6"
+        },
+        {
+            "name": "HUSD",
+            "decimals": 18,
+            "tethered": false,
+            "underlying_address": "0x8dd66eefef4b503eb556b1f50880cc04416b916b"
+        },
+        {
+            "name": "USDT",
+            "decimals": 6,
+            "tethered": true,
+            "underlying_address": "0x04f535663110a392a6504839beed34e019fdb4e0"
+        }
+    ]
+}

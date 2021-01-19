@@ -1,0 +1,28 @@
+# default balance of 1 million ether to simplify testing of ETH pools
+networks:
+  development:
+    cmd_settings:
+      default_balance: 10000
+  hmainnet:
+    host: 'https://http-mainnet.hecochain.com'
+    chainid: 128
+
+  htestnet:
+    host: 'https://http-mainnet.hecochain.com'
+    chainid: 256
+
+# exclude non-core contracts from coverage analysis
+reports:
+  exclude_paths:
+    - contracts/testing/*.*
+    - contracts/gauges/*.*
+
+hypothesis:
+  phases:
+    explicit: true
+    reuse: false
+    generate: true
+    target: false
+    shrink: false
+
+autofetch_sources: true
